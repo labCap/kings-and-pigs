@@ -17,17 +17,17 @@ class Sprite {
 
   draw() {
     if (!this.loaded) return;
-    const cropbox = {
+    const cropBox = {
       position: { x: this.width * this.currentFrame, y: 0 },
       width: this.width,
       height: this.height,
     };
     c.drawImage(
       this.image,
-      cropbox.position.x,
-      cropbox.position.y,
-      cropbox.width,
-      cropbox.height,
+      cropBox.position.x,
+      cropBox.position.y,
+      cropBox.width,
+      cropBox.height,
       this.position.x,
       this.position.y,
       this.width,
